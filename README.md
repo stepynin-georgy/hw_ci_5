@@ -5,7 +5,14 @@
 
 1. Или подготовьте к работе Managed GitLab от yandex cloud [по инструкции](https://cloud.yandex.ru/docs/managed-gitlab/operations/instance/instance-create) .
 Или создайте виртуальную машину из публичного образа [по инструкции](https://cloud.yandex.ru/marketplace/products/yc/gitlab ) .
-2. Создайте виртуальную машину и установите на нее gitlab runner, подключите к вашему серверу gitlab  [по инструкции](https://docs.gitlab.com/runner/install/linux-repository.html) .
+
+Создал инстанс gitlab по первой инструкции:
+
+![изображение](https://github.com/stepynin-georgy/hw_ci_5/blob/main/img/Screenshot_70.png)
+
+![изображение](https://github.com/stepynin-georgy/hw_ci_5/blob/main/img/Screenshot_71.png)
+
+3. Создайте виртуальную машину и установите на нее gitlab runner, подключите к вашему серверу gitlab  [по инструкции](https://docs.gitlab.com/runner/install/linux-repository.html) .
 
 <details><summary>Установка gitlab-runner</summary>
 
@@ -95,6 +102,9 @@ Configuration (with the authentication token) was saved in "/etc/gitlab-runner/c
 
 4. Создайте свой новый проект.
 5. Создайте новый репозиторий в GitLab, наполните его [файлами](./repository).
+
+![изображение](https://github.com/stepynin-georgy/hw_ci_5/blob/main/img/Screenshot_73.png)
+
 6. Проект должен быть публичным, остальные настройки по желанию.
 
 ## Основная часть
@@ -109,7 +119,9 @@ Configuration (with the authentication token) was saved in "/etc/gitlab-runner/c
 4. Создана директория `/python_api`.
 5. Скрипт из репозитория размещён в /python_api.
 6. Точка вызова: запуск скрипта.
-7. При комите в любую ветку должен собираться docker image с форматом имени hello:gitlab-$CI_COMMIT_SHORT_SHA . Образ должен быть выложен в Gitlab registry или yandex registry.   
+7. При комите в любую ветку должен собираться docker image с форматом имени hello:gitlab-$CI_COMMIT_SHORT_SHA . Образ должен быть выложен в Gitlab registry или yandex registry.
+
+[Dockerfile]() 
 
 ### Product Owner
 
