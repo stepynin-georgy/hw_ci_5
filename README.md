@@ -7,6 +7,8 @@
 Или создайте виртуальную машину из публичного образа [по инструкции](https://cloud.yandex.ru/marketplace/products/yc/gitlab ) .
 2. Создайте виртуальную машину и установите на нее gitlab runner, подключите к вашему серверу gitlab  [по инструкции](https://docs.gitlab.com/runner/install/linux-repository.html) .
 
+<details><summary>Установка gitlab-runner</summary>
+
 ```
 root@gitlab-runner:/home/user# curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
 
@@ -66,6 +68,7 @@ No user sessions are running outdated binaries.
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 root@gitlab-runner:/home/user#
 ```
+</details>
 
 Регистрация раннера:
 
