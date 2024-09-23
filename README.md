@@ -70,7 +70,7 @@ root@gitlab-runner:/home/user#
 ```
 </details>
 
-Регистрация раннера:
+<details><summary>Регистрация gitlab-runner</summary>
 
 ```
 root@gitlab-runner:/home/user# gitlab-runner register  --url https://hw-netology-ci.gitlab.yandexcloud.net  --token ########################
@@ -89,6 +89,7 @@ Runner registered successfully. Feel free to start it, but if it's running alrea
 Configuration (with the authentication token) was saved in "/etc/gitlab-runner/config.toml"
 
 ```
+</details>
 
 3. (* Необязательное задание повышенной сложности. )  Если вы уже знакомы с k8s попробуйте выполнить задание, запустив gitlab server и gitlab runner в k8s  [по инструкции](https://cloud.yandex.ru/docs/tutorials/infrastructure-management/gitlab-containers). 
 
